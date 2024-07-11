@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 html{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #1F2937;
@@ -55,12 +59,13 @@ ul{
 }
 
 .button_one a{
-    display: block;
-    box-sizing: border-box;
-    width: 130px;
-    padding: 10px;
-    border: 100px;
+    display: flex;
+    width: 100px;
+    height: 35px;
+    border: 10px;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background-color: #3882F6;
     color: #F9FAF8;
@@ -69,9 +74,14 @@ ul{
 
 .placeholder img{
     display: flex;
-    background-color: gray;
-    border: 10px black;
+    background-color: #a7a7a7;
+    min-width: 200px;
+    flex-shrink: 0;
+    min-height: auto;
+    padding: 100px 100px;
     margin-top: 150px;
+    margin-bottom: 150px;
+
 }
 
 .information_block{
@@ -91,13 +101,14 @@ ul{
 .lists ul{
     display: flex;
     justify-content: space-around;
+    gap: 50px;
 }
 .illustration{
     display: flex;
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
-    justify-content: center;
+    border: #3882F6 solid;
+    width: 135px;
+    height: 135px;
+    border-radius: 10px;
     margin-top: 50px;
 }
 
@@ -158,16 +169,13 @@ ul{
 
 .button a{
     color: white;
-    display: block;
-    box-sizing: border-box;
-    display: block;
-    box-sizing: border-box;
-    width: 130px;
+    width: 100px;
+    height: 35px;
     padding: 10px;
-    border: 100px;
+    border: 2px solid white;
     margin: 10px;
     border-radius: 10px;
-    background-color: grey;
+    background-color: transparent;
 }
 
 .footer{
@@ -177,3 +185,4 @@ ul{
     padding: 10px;
     align-items: center;
 }
+
